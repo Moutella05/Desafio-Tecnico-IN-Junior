@@ -86,22 +86,3 @@ function countBooksInCategory (booksByCategory){
     ]
     return qnt
 }
-
-function authors (booksByCategory){
-    let i
-    let j
-    let authorsVet = []
-    for(i=0;i<booksByCategory.length;i++){
-        for(j=0;j<booksByCategory[i].books.length;j++){
-            if (authorsVet.includes(booksByCategory[i].books[j].author))
-                continue
-            else
-                authorsVet.push(booksByCategory[i].books[j].author)
-        }
-    }
-    return authorsVet
-}
-let qnt = countBooksInCategory(booksByCategory)
-let authorsBook = authors(booksByCategory)
-console.log(qnt)
-console.log(authorsBook)
