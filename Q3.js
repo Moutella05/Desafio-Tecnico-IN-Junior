@@ -7,7 +7,7 @@ while(idade>0){
 }
 let verificar = verificarIdade(pessoas)
 for(i=0; i<verificar.length; i++){
-    console.log(`A pessoa ${i+1} e : ${verificar[i]}`)
+    console.log(`Pessoa ${i+1}: ${verificar[i]}`)
 }
 
 function verificarIdade(pessoas){
