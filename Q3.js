@@ -2,7 +2,7 @@ let idade =1
 let i
 let pessoas = []
 while(idade>0){
-    idade = Number(prompt(`Digite sua idade`))
+    idade = parseInt(prompt(`Digite sua idade`))
     pessoas.push(idade)
 }
 let verificar = verificarIdade(pessoas)
