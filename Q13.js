@@ -63,15 +63,8 @@ function listarTime(){
         console.log("Nenhum jogador cadastrado");
         return 0
     }
-    else{
-        if (time.length == 0){
-            console.log("Nenhum jogador cadastrado");
-        }
-        else{
-        for(i=0 ; i<time.length ; i++){
-            console.log(`Nome: ${time[i].nome}, Idade: ${time[i].idade}, Posicao: ${time[i].posicao}, Pontuacao: ${time[i].pontuacao}`);
-            }
-        }
+    for(i=0 ; i<time.length ; i++){
+        console.log(`Nome: ${time[i].nome}, Idade: ${time[i].idade}, Posicao: ${time[i].posicao}, Pontuacao: ${time[i].pontuacao}`);
     }
 }
 
