@@ -69,15 +69,12 @@ function listarTime(){
 }
 
 function calcularPontuacaoMedia(){
-    let soma = 0
-    for(i=0 ; i<time.length ; i++){
-        soma += time[i].pontuacao
-    }
     if(time.length == 0){
         return 0
     }
-    else{
-        let media = soma / time.length
-        return media
-    }
+    let soma = 0
+    for(i=0 ; i<time.length ; i++)
+        soma += time[i].pontuacao
+    let media = soma / time.length
+    return media
 }
